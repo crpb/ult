@@ -1,0 +1,16 @@
+#compdef ult
+
+# Copyright © 2024 Christopher Bock <christopher@bocki.com>
+# SPDX-License-Identifier: MIT
+
+local arguments=
+
+arguments=(
+  '(-r,--regexp)'{-r,--regexp}'[show info about characters matching regexp]'
+  '(-s,--string)'{-s,--string}'[show info about characters in the string]'
+  '(-p --print)'{-p,--print}'[print only characters]'
+  {-h,--help}'[show help]'
+    '--version[show version information]'
+  )
+
+_arguments -S $arguments
